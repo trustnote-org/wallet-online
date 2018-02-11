@@ -15,7 +15,7 @@
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/trustnote/wallet-offline/issues"
+    "url": "https://github.com/trustnote/wallet-online/issues"
   },
   "browser": {
     "request": "browser-request",
