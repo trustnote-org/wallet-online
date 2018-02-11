@@ -1,1 +1,1 @@
-# Online wallet for Trustnote network
+ Online wallet for Trustnote network
