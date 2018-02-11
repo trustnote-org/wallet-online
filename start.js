@@ -343,22 +343,10 @@ function issueChangeAddressAndSendPayment(asset, amount, to_address, device_addr
 }
 
 function issueChangeAddressAndSendPaymentExchange(asset, amount, to_address, onDone){
-	// if (conf.bSingleAddress){
-	// 	readSingleAddress(function(change_address){
-	// 		sendPayment(asset, amount, to_address, change_address, device_address, onDone);
-	// 	});
-	// }
-	// else if (conf.bStaticChangeAddress){
-	// 	issueOrSelectStaticChangeAddress(function(change_address){
-	// 		sendPayment(asset, amount, to_address, change_address, device_address, onDone);
-	// 	});
-	// }
-	// else{
 		var walletDefinedByKeys = require('trustnote-common/wallet_defined_by_keys.js');
 		walletDefinedByKeys.issueOrSelectNextChangeAddress(wallet_id, function(objAddr){
 			sendPaymentExchange(asset, amount, to_address, objAddr.address, onDone);
 		});
-	// }
 }
 
 function issueOrSelectNextMainAddress(handleAddress){
